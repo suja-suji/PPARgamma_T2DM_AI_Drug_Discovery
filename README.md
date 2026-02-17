@@ -13,11 +13,11 @@ The goal was to compare between Descriptor based and fingerprint based models wh
 Labeling Strategy :
 PPARγ is involved in multiple pathological conditions, a similarity-based approach was used to identify the diabetes-relevant compounds.
   1. Tanimoto similarity was calculated against: Rosiglitazone and Pioglitazone (Reference Drugs), Average similarity score was computed.
-  2. Primary labeling rule: Threshold value - 0.5245
-       Average similarity ≥ 0.5245 → Active (1)
+  2. Primary labeling rule: Threshold value - 0.5245 ;
+       Average similarity ≥ 0.5245 → Active (1) ;
        Average similarity < 0.5245 → Inactive (0)
-  3. Seconadry labeling rule: Borderline compounds (0.50–0.53 similarity):
-      EC50 ≤ 1000 nM or missing EC50 → Active
+  3. Seconadry labeling rule: Borderline compounds (0.50–0.53 similarity) ;
+      EC50 ≤ 1000 nM or missing EC50 → Active ;
       EC50 > 1000 nM → Inactive
 This approach integrates both structural similarity and experimental bioactivity data.
 
