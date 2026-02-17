@@ -21,13 +21,15 @@ The goal was to compare descriptor-based and fingerprint-based approaches for pr
     * Pioglitazone
 4. Bioactivity metric: EC50
 
-**Dataset**
-Dataset contained:
+**Dataset Contain**
 1. Molecule ChEMBL ID
 2. Canonical SMILES
 3. EC50 values
 4. Binary activity labels
-5. Total compounds: 5,305
+5. Total compounds count initial: 5,305
+6. After Cleaning, the total compounds count: 4,285
+7. Active compounds count: 23
+8. Inactive compounds count: 4262
 
 **Labeling Strategy**
 1. Compounds were labeled using a similarity-based approach:
@@ -60,7 +62,21 @@ This approach integrates both structural similarity and experimental bioactivity
     * ROC-AUC
     * Confusion matrix
 
+**Descriptor and Fingerprint Model Performance Summary**
+
+| Feature Type  |  Best Model | Precision  |  Recall | F1 Score  |   ROC-AUC|
+|---|---|---|---|---|---|
+| Molecular Descriptors  |  XGBoost(Tuned)  |  0.562  |  1.00  |  0.720  |   0.999 |
+| Molecular Fingerprints  |  Random Forest(Deafult)|  0.889 |  0.889  |   0.889 |  1.00  |
+
+A total of 12 models were trained (3 Models with default and tuned hyperparameters) across two feature representations: molecular descriptors and molecular fingerprints.
+
+Fingerprint-based models consistently outperformed descriptor-based models across all evaluation metrics. The best overall model was Random Forest trained on molecular fingerprints, achieving an F1-score of 0.889 and ROC-AUC of 1.00.
+
+Hyperparameter tuning improved descriptor-based models; however, they did not surpass fingerprint-based approaches in predictive performance.
+
 **Tools and Libraries**
+
 1. Python
 2. RDKit
 3. Pandas
