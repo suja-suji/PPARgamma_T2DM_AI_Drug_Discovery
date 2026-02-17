@@ -5,11 +5,11 @@ AI-Driven ML pipeline for predicting PPARγ EC50 bioactivity using similarity-ba
 This project presents an end-to-end AI-driven drug discovery workflow for predicting PPARγ bioactivity associated with Type 2 Diabetes Mellitus (T2DM).
 
 **The pipeline integrates:**
-    - ChEMBL data extraction
-    - Similarity-based compound labeling
-    - Descriptor and fingerprint feature engineering
-    - Machine learning modeling
-    - Performance evaluation
+    * ChEMBL data extraction
+    * Similarity-based compound labeling
+    * Descriptor and fingerprint feature engineering
+    * Machine learning modeling
+    * Performance evaluation
 The goal was to compare descriptor-based and fingerprint-based approaches for predicting PPARγ activity.
 
 **Target and Disease Context**
@@ -33,11 +33,11 @@ Dataset contained:
 2. Tanimoto similarity was calculated between to fix a threshold : Rosiglitazone and Pioglitazone
 3. Average similarity score was computed.
 4. Primary labeling rule: Thershold - 0.5245
-    - Average similarity ≥ 0.5245 → Active (1)
-    - Average similarity < 0.5245 → Inactive (0)
+    * Average similarity ≥ 0.5245 → Active (1)
+    * Average similarity < 0.5245 → Inactive (0)
 5. Secondary labeling rule: Borderline compounds (0.50–0.53 similarity):
-    - EC50 ≤ 1000 nM or missing EC50 → Active
-    - EC50 > 1000 nM → Inactive
+    * EC50 ≤ 1000 nM or missing EC50 → Active
+    * EC50 > 1000 nM → Inactive
 This approach integrates both structural similarity and experimental bioactivity data.
 
 **Workflow**
@@ -48,16 +48,16 @@ This approach integrates both structural similarity and experimental bioactivity
 5. 1D/2D descriptor generation
 6. Morgan fingerprint generation
 7. ML modeling:
-    - Random Forest
-    - SVM
-    - XGBoost
+    * Random Forest
+    * SVM
+    * XGBoost
 8. Model evaluation:
-    - Precision
-    - Recall
-    - F1-score
-    - Accuracy
-    - ROC-AUC
-    - Confusion matrix
+    * Precision
+    * Recall
+    * F1-score
+    * Accuracy
+    * ROC-AUC
+    * Confusion matrix
 
 **Tools and Libraries**
 1. Python
