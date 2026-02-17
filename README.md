@@ -1,10 +1,11 @@
 # PPARgamma_Type2 Diabetes Mellitus_AIML_Drug_Discovery
 AI-Driven ML pipeline for predicting PPARγ EC50 bioactivity using similarity-based labeling
 
-**Project Overview**
+**Project Overview:** 
 This project presents an end-to-end AI-driven drug discovery workflow for predicting PPARγ bioactivity associated with Type 2 Diabetes Mellitus (T2DM).
 
 **The pipeline integrates:**
+
     * ChEMBL data extraction
     * Similarity-based compound labeling
     * Descriptor and fingerprint feature engineering
