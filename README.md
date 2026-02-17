@@ -75,6 +75,26 @@ Fingerprint-based models consistently outperformed descriptor-based models acros
 
 Hyperparameter tuning improved descriptor-based models; however, they did not surpass fingerprint-based approaches in predictive performance.
 
+
+**How to Run the Project**
+
+1. Clone the repository:
+   git clone https://github.com/suja-suji/PPARgamma_T2DM_AI_Drug_Discovery
+2. Navigate into the project folder:
+   PPARgamma_T2DM_AI_Drug_Discovery
+3. Install required libraries:
+   pip install -r requirements.txt
+4. Open the notebooks in order:
+   - 01_data_collection_and_similarity_labeling.ipynb
+   - 02_dataset_cleaning.ipynb
+   - 03_rosiglitazone_derivative_analysis.ipynb
+   - 04_pioglitazone_derivative_analysis.ipynb
+   - 05_1D_2D_descriptor_generation.ipynb
+   - 06_morgan_fingerprint_generation.ipynb
+   - 07_descriptor_based_ml_models.ipynb
+   - 08_fingerprint_based_ml_models.ipynb
+
+
 **Tools and Libraries**
 
 1. Python
